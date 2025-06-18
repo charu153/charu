@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Charulata Manohar Talele - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0; 
+    font-family: 'Inter', sans-serif;
+    color: #064e3b;
+    background-color: #e6f4ea;
+  }
+  header, footer {
+    background: #10b981;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+  nav a {
+    margin: 0 1rem; 
+    color: #e6f4ea; 
+    text-decoration: none;
+    font-weight: 700;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main > section {
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    margin-top: 0; 
+    font-weight: 700; 
+    color: #065f46;
+  }
+  p, label {
+    color: #064e3b;
+  }
+  form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem;
+  }
+  input, textarea {
+    padding: 0.6rem; 
+    border-radius: 0.5rem;
+    border: 1px solid #10b981; 
+    font-family: inherit; 
+    font-size: 1rem;
+    background: #f0fdfa; 
+    color: #064e3b;
+  }
+  input:focus, textarea:focus {
+    outline: 2px solid #10b981;
+  }
+  button {
+    background: #10b981; 
+    color: #ffffff;
+    padding: 0.75rem; 
+    border: none; 
+    border-radius: 0.75rem;
+    font-weight: 700; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #059669;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+<section id="personal-info" aria-label="Personal Information Section">
+  <h2>Personal Information</h2>
+  <ul>
+    <li><strong>Full Name:</strong> Charulata Manohar Talele</li>
+    <li><strong>Location:</strong> Maharashtra, India</li>
+    <li><strong>Education:</strong> Diploma in Computer Engineering</li>
+    <li><strong>Languages:</strong> English, Marathi, Hindi</li>
+    <li><strong>Hobbies:</strong> Reading tech blogs, UI designing, Exploring new tools</li>
+    <li><strong>Career Goal:</strong> To become a skilled full-stack developer contributing to impactful tech solutions</li>
+  </ul>
+</section>
+  <section id="about" aria-label="About Me Section">
+    <h1>About Me</h1>
+    <p>I am a Computer Engineering diploma student passionate about technology and problem-solving. I have a solid foundation in programming and software development, and I aim to contribute to innovative projects while continuing to grow in the field.</p>
+  </section>
+ <section id="skills" aria-label="My Skills Section">
+  <h2>My Skills</h2>
+  <ul>
+    <li>Programming Languages: C, C++, Python, Java</li>
+    <li>Web Development: HTML, CSS</li>
+    <li>Database Management: MySQL</li>
+    <li>Tools & Platforms: GitHub, VS Code</li>
+    <li>Problem Solving and Debugging</li>
+  </ul>
+</section>
+  <section id="contact" aria-label="Contact Me Section">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent!');">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required autocomplete="name" />
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required autocomplete="email" />
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+<footer>
+  © 2025 Charulata Manohar Talele
+</footer>
+</body>
+</html>
